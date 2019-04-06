@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from xiaoxin.views import TT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^TT/', TT.as_view()),
 ]
